@@ -1,0 +1,43 @@
+.Container{
+    display: grid;
+    grid-template-columns: 2fr 7fr;
+}
+.leftSide{
+
+    width: 100%;
+    border-right: 1px solid #ddd;
+}
+.leftSide .head{
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    font-size: 17px;
+    border-bottom: 1px solid #ddd;
+}
+
+.leftSide .menuContainer{
+    padding-top: 25px;
+}
+.menuList{
+    list-style: none;
+}
+
+.menuList li{
+    line-height: 1.5;
+}
+.menuList li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+.menuList li a:hover{
+    color: #999;
+}
+.rightSide{
+
+    width: 100%;
+   
+}
+.active{
+    font-weight: 600;
+}

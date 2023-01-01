@@ -1,0 +1,112 @@
+
+
+.info, .form{
+    margin: 20px 40px;
+}
+.form > div:nth-child(1){
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 30px;
+}
+.info01, .info02{
+    margin-bottom: 40px;
+}
+.info01 .contact-title, .info02 .contact-title{
+    font-weight: 600;
+    margin-bottom: 17px;
+}
+.info02 .span{
+    display:flex;
+    margin-bottom: 10px;
+}
+.info02 .span img{
+    margin-right: 10px;
+    width: 20px;
+}
+.info02 .span p{
+    margin-left: 10px;
+}
+.item1, .item2, .item3 , .item4 , .item5 , .item6 , .item7 , .item8 {
+    display: flex; 
+    flex-direction: column;
+
+}
+input{
+    line-height: 2.3;
+    font-size: 14px;
+    padding: 0 10px;
+    border: 2px solid #000;
+}
+select{
+    height: 40px;
+    font-size: 12px;
+    padding: 0 10px;
+    border: 2px solid #000;
+}
+textarea{
+    padding:10px;
+    border: 2px solid #000;
+}
+
+.item1{
+    grid-area: nome;
+}
+.item2{
+    grid-area: sobre;    
+}
+.item3{
+    grid-area: email;    
+}
+.item4{
+    grid-area: tel;    
+}
+.item5{
+    grid-area: cel;    
+}
+.item6{
+    grid-area: opt;    
+}
+.item7{
+    grid-area: msg;    
+}
+.item8{
+    grid-area: btn;  
+    display: flex;
+    align-items: center; 
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    font-weight: 600;
+}
+
+.formContent{
+    display: grid;
+    grid-template-areas:
+        'nome nome nome sobre sobre' 
+        'email email email email .'
+        'tel tel tel cel cel'
+        'opt opt opt . .'
+        'msg msg msg msg msg'
+        'btn . . . .'
+    ;
+
+    gap: 30px;
+}
+.formContent{
+    margin-top: 50px;
+}
+
+@media only screen and (max-width: 768px){
+    .formContent{
+        display: grid;
+        grid-template-areas:
+        'nome nome nome' 
+        'sobre sobre sobre'
+        'email email email'
+        'tel tel tel'
+        'cel cel cel'
+        'opt opt opt'
+        'msg msg msg'
+        'btn . .'
+        ;
+    }
+}
